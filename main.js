@@ -9,7 +9,7 @@ let para = document.querySelector("p");
 const weatherapp = async(e)=>{
     e.preventDefault(); 
 try {
-    const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=a4cb33663f054e989c440901240908&q=${input.value}&days=10&aqi=yes&alerts=yes`);
+    const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=a4cb33663f054e989c440901240908&q=${input.value}&days=10&aqi=yes&alerts=yes`);
 const data = await response.json();
 console.log(data);
 
